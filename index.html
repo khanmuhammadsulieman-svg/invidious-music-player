@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Invidious Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎵 Cloud Music</h1>
+      <p>Ad-free streaming with background playback</p>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search songs or artists..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="status" class="status-msg"></div>
+
+    <div id="results" class="results-list"></div>
+
+    <!-- Fixed Bottom Audio Player -->
+    <div class="player-bar" id="playerBar">
+      <img id="playerThumb" src="" alt="Thumbnail" />
+      <div class="player-meta">
+        <span id="playerTitle" class="song-title">Select a song</span>
+        <span id="playerArtist" class="song-artist"></span>
+      </div>
+      <audio id="audioElement" controls autoplay></audio>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
